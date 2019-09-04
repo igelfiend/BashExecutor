@@ -33,7 +33,7 @@ bool BashExecutor::runScript(const QString &filepath)
     qDebug() << "executed file:  " << "." << QDir::separator() << shortFilename;
 
     _process->setWorkingDirectory( pwd );
-    _process->start( "/bin/bash", QStringList() << shortFilename );e
+    _process->start( "/bin/bash", QStringList() << shortFilename );
 
     if( !_process->waitForStarted() )
     {
